@@ -52,6 +52,3 @@ tubelib_addons1.register_farming_node('farming:onion_5', 'farming:onion 2', 'far
 tubelib_addons1.register_farming_node('farming:pea_5', 'farming:pea_pod 3', 'farming:pea_1')
 tubelib_addons1.register_farming_node('farming:pepper_5', 'farming:pepper 2', 'farming:pepper_1')
 tubelib_addons1.register_farming_node('farming:pineapple_8', 'farming:pineapple 1', 'farming:pineapple_1')
-
--- gloopblocks mod
-tubelib.add_grinder_recipe({input='gloopblocks:basalt', output='default:gravel'})
