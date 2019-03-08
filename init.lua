@@ -5,7 +5,7 @@ function register_tree(treename)
 
     tubelib_addons1.register_tree_node(trunk_name, trunk_name, sappling_name)
     tubelib_addons1.register_farming_node(leaves_name)
-    tubelib_addons1.register_ground_node(trunk_name, leaves_name .. ' 8')
+    tubelib.add_grinder_recipe({input=trunk_name, output=leaves_name .. ' 8'})
 end
 
 -- "ordinary" moretrees blocks
@@ -19,19 +19,19 @@ end
 
 -- "weird" moretrees trunks
 tubelib_addons1.register_tree_node('moretrees:date_palm_fruit_trunk', 'moretrees:date_palm_trunk', 'moretrees:date_palm_sapling')
-tubelib_addons1.register_ground_node('moretrees:date_palm_fruit_trunk', 'moretrees:date_palm_leaves 8')
+tubelib.add_grinder_recipe({input='moretrees:date_palm_fruit_trunk', output='moretrees:date_palm_leaves 8'})
 tubelib_addons1.register_tree_node('moretrees:date_palm_ffruit_trunk', 'moretrees:date_palm_trunk', 'moretrees:date_palm_sapling')
-tubelib_addons1.register_ground_node('moretrees:date_palm_ffruit_trunk', 'moretrees:date_palm_leaves 8')
+tubelib.add_grinder_recipe({input='moretrees:date_palm_ffruit_trunk', output='moretrees:date_palm_leaves 8'})
 tubelib_addons1.register_tree_node('moretrees:date_palm_mfruit_trunk', 'moretrees:date_palm_trunk', 'moretrees:date_palm_sapling')
-tubelib_addons1.register_ground_node('moretrees:date_palm_mfruit_trunk', 'moretrees:date_palm_leaves 8')
+tubelib.add_grinder_recipe({input='moretrees:date_palm_mfruit_trunk', output='moretrees:date_palm_leaves 8'})
 tubelib_addons1.register_tree_node('moretrees:jungletree_trunk', 'default:jungletree', 'default:junglesapling')
-tubelib_addons1.register_ground_node('moretrees:jungletree_trunk', 'default:jungleleaves 8')
+tubelib.add_grinder_recipe({input='moretrees:jungletree_trunk', output='default:jungleleaves 8'})
 tubelib_addons1.register_tree_node('moretrees:palm_fruit_trunk', 'moretrees:palm_trunk', 'moretrees:palm_sapling')
-tubelib_addons1.register_ground_node('moretrees:palm_fruit_trunk', 'moretrees:palm_leaves 8')
+tubelib.add_grinder_recipe({input='moretrees:palm_fruit_trunk', output='moretrees:palm_leaves 8'})
 tubelib_addons1.register_tree_node('moretrees:palm_fruit_trunk_gen', 'moretrees:palm_trunk', 'moretrees:palm_sapling')
-tubelib_addons1.register_ground_node('moretrees:palm_fruit_trunk_gen', 'moretrees:palm_leaves 8')
+tubelib.add_grinder_recipe({input='moretrees:palm_fruit_trunk_gen', output='moretrees:palm_leaves 8'})
 tubelib_addons1.register_tree_node('moretrees:rubber_tree_trunk_empty', 'moretrees:rubber_tree_trunk_empty', 'moretrees:rubber_tree_sapling')
-tubelib_addons1.register_ground_node('moretrees:rubber_tree_trunk_empty', 'moretrees:rubber_tree_leaves 8')
+tubelib.add_grinder_recipe({input='moretrees:rubber_tree_trunk_empty', output='moretrees:rubber_tree_leaves 8'})
 
 -- moretrees fruit and leaves
 tubelib_addons1.register_farming_node('moretrees:acorn')
@@ -54,4 +54,4 @@ tubelib_addons1.register_farming_node('farming:pepper_5', 'farming:pepper 2', 'f
 tubelib_addons1.register_farming_node('farming:pineapple_8', 'farming:pineapple 1', 'farming:pineapple_1')
 
 -- gloopblocks mod
-tubelib_addons1.register_ground_node('gloopblocks:basalt', 'default:gravel')
+tubelib.add_grinder_recipe({input='gloopblocks:basalt', output='default:gravel'})
