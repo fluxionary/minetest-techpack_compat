@@ -12,7 +12,7 @@ end
 for i in ipairs(moretrees.treelist) do
     local treename = moretrees.treelist[i][1]
 
-    if treename ~= 'birch' and treename ~= 'spruce' and treename ~= 'fir' and treename ~= 'jungletree' then
+    if treename ~= 'jungletree' then
         register_tree(treename)
     end
 end
